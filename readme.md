@@ -6,4 +6,5 @@
 
     Test: ro.jtonic.handson.XPathTest.testSimpleXPath
 
+    before run the test copy employees.xml to /tmp (temporal solution)
     $ mvn test
