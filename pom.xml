@@ -25,10 +25,47 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <executions>
+                    <execution>
+                        <id>maven-compiler-plugin</id>
+                    </execution>
+                </executions>
+                <configuration>
+                    <compilerId>groovy-eclipse-compiler</compilerId>
+                    <verbose>true</verbose>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-eclipse-compiler</artifactId>
+                        <version>2.7.0-01</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
         </plugins>
     </build>
 
   <dependencies>
+
+      <dependency>
+          <groupId>org.codehaus.groovy</groupId>
+          <artifactId>groovy-all</artifactId>
+          <version>2.1.6</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.easytesting</groupId>
+          <artifactId>fest-assert</artifactId>
+          <version>1.4</version>
+      </dependency>
+
       <dependency>
           <groupId>org.testng</groupId>
           <artifactId>testng</artifactId>
