@@ -1,4 +1,4 @@
-package ro.jtonic.handson;
+package ro.jtonic.handson.xml;
 
 import org.testng.annotations.Test;
 import org.w3c.dom.Document;
